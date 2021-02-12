@@ -106,3 +106,9 @@ top: 0px;
     height: 100%;
     margin: auto;
 }
+.mobile_container #texts p {
+    font-size: 28px;
+
+}
+.mobile_container .text-container h2 {
+    font-size: 30px;
