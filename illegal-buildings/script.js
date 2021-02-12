@@ -2,7 +2,10 @@ const DEFAULT_SLUG = 'kentron'
 
 $(document).ready(function ($) {
     const textsPlace = $("#texts");
-    
+    $(window.parent).resize(function(){
+        console.log(this.innerWidth) 
+
+    })
     updateNumbers(data)
     updateTexts(DEFAULT_SLUG)
     
