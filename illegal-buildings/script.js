@@ -4,7 +4,7 @@ $(document).ready(function ($) {
     const textsPlace = $("#texts");
 
     const PARENT_HEIGHT = window.parent.document.getElementsByTagName('body')[0].clientWidth
-    const MOBILE_HEIGHT = 1000
+    const MOBILE_HEIGHT = 1200
     const DESKTOP_HEIGHT = 600
     const CONTAINER_MOBILE_CLASS = 'mobile_container'
     const RESPONSIVE_SIZE = 981
