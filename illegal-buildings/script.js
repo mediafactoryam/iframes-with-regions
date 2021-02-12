@@ -30,6 +30,7 @@ $(document).ready(function ($) {
     $(".region").click(function (e) {
         let slug = $(this).attr("id")
         updateTexts(slug)
+        $("#texts").scrollTop(0)
     })
 
     function updateNumbers(data) {
