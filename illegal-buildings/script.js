@@ -57,7 +57,7 @@ $(document).ready(function ($) {
         window.parent.document.getElementsByClassName('map_iframe')[0].style.height = height
     }
     function getPareHeight() {
-        return window.parent.document.getElementsByClassName('map_iframe')[0].style.height
+        return window.parent.document.innerWidth
     }
 
 });
