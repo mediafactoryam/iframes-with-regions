@@ -3,27 +3,27 @@ const DEFAULT_SLUG = 'kentron'
 $(document).ready(function ($) {
     const textsPlace = $("#texts");
 
-    const PARENT_HEIGHT = window.parent.document.getElementsByTagName('body')[0].clientWidth
-    const MOBILE_HEIGHT = 1400
-    const DESKTOP_HEIGHT = 600
-    const CONTAINER_MOBILE_CLASS = 'mobile_container'
-    const RESPONSIVE_SIZE = 981
-    updateIframe(
-        PARENT_HEIGHT,
-        MOBILE_HEIGHT,
-        DESKTOP_HEIGHT,
-        RESPONSIVE_SIZE,
-        CONTAINER_MOBILE_CLASS
-    )
-    $(window.parent).resize(function () {
-        updateIframe(
-            this.innerWidth,
-            MOBILE_HEIGHT,
-            DESKTOP_HEIGHT,
-            RESPONSIVE_SIZE,
-            CONTAINER_MOBILE_CLASS
-        )
-    })
+    // const PARENT_HEIGHT = window.parent.document.getElementsByTagName('body')[0].clientWidth
+    // const MOBILE_HEIGHT = 1400
+    // const DESKTOP_HEIGHT = 600
+    // const CONTAINER_MOBILE_CLASS = 'mobile_container'
+    // const RESPONSIVE_SIZE = 981
+    // updateIframe(
+    //     PARENT_HEIGHT,
+    //     MOBILE_HEIGHT,
+    //     DESKTOP_HEIGHT,
+    //     RESPONSIVE_SIZE,
+    //     CONTAINER_MOBILE_CLASS
+    // )
+    // $(window.parent).resize(function () {
+    //     updateIframe(
+    //         this.innerWidth,
+    //         MOBILE_HEIGHT,
+    //         DESKTOP_HEIGHT,
+    //         RESPONSIVE_SIZE,
+    //         CONTAINER_MOBILE_CLASS
+    //     )
+    // })
     updateNumbers(data)
     updateTexts(DEFAULT_SLUG)
 
