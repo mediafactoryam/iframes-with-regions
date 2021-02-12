@@ -89,7 +89,7 @@ top: 0px;
 }
 .mobile_container {
     grid-template-columns: 1fr;
-    grid-template-rows: 890px 490px;
+    grid-template-rows: 888px 490px;
     grid-row-gap: 20px;
 
 }
