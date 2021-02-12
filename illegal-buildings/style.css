@@ -89,7 +89,7 @@ top: 0px;
 }
 .mobile_container {
     grid-template-columns: 1fr;
-    grid-template-rows: 900px 300px;
+    grid-template-rows: 895px 495px;
 
 }
 .mobile_container .map-cont{
