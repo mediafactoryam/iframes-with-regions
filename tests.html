@@ -12,21 +12,24 @@
       numquam modi ad, quia optio similique ipsam voluptatibus rem eius explicabo molestiae in eos?</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cum velit soluta ea consectetur illum aspernatur
       numquam modi ad, quia optio similique ipsam voluptatibus rem eius explicabo molestiae in eos?</p>
-    <style>
-      @media only screen and ( max-device-width: 900px) {
-        .map_iframe{
-          height:1400px;
-        }
+    <script>
+      window.addEventListener('resize', function () {
+          document.getElementsByClassName('map_iframe1')[0].outerHTML = createIframe()
+      })
+      function getWidth(tagName) {
+        return document.getElementsByTagName(tagName)[0].clientWidth
       }
-      @media only screen and (min-device-width: 901px) {
-        .map_iframe{
-          height:600px;
-        }
+      function createIframe() {
+        return `<iframe width="100%" height="600" class="map_iframe1" src="https://mediafactoryam.github.io/iframes-with-regions/illegal-buildings/index.html" frameborder="0"
+    onload="this.style.height = (window.innerWidth < 981) ?  '1400px' :  '600px'" 
+    style="overflow:none"></iframe>`
       }
-    </style>
-    <iframe class="map_iframe"  width="100%"
-      src="/illegal-buildings/index.html" frameborder="0"
-      style="overflow:none"></iframe>
+    </script>
+    <iframe width="100%" height="600" class="map_iframe1" src="https://mediafactoryam.github.io/iframes-with-regions/illegal-buildings/index.html" frameborder="0"
+    onload="this.style.height = (window.innerWidth < 981) ?  '1400px' :  '600px'" 
+    style="overflow:none"></iframe>
+    <!-- <iframe width="100%" height="1400" class="map_iframe2" src="https://mediafactoryam.github.io/iframes-with-regions/illegal-buildings/index.html" frameborder="0"
+      style="overflow:none" onload="this.style.display = (window.innerWidth > 981) ?  'none' :  'block'"></iframe> -->
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cum velit soluta ea consectetur illum aspernatur
       numquam modi ad, quia optio similique ipsam voluptatibus rem eius explicabo molestiae in eos?</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cum velit soluta ea consectetur illum aspernatur
@@ -35,3 +38,5 @@
 </body>
 
 </html>
+
+<!-- onload="this.style.display = (window.innerWidth < 600) ?  'none' :  'block'" -->
