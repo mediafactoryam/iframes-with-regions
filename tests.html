@@ -14,18 +14,18 @@
       numquam modi ad, quia optio similique ipsam voluptatibus rem eius explicabo molestiae in eos?</p>
     <script>
       window.addEventListener('resize', function () {
-          document.getElementsByClassName('map_iframe1')[0].outerHTML = createIframe()
+          document.querySelectorAll('iframe[src="https://mediafactoryam.github.io/iframes-with-regions/illegal-buildings/index.html"]')[0].outerHTML = createIframe()
       })
       function getWidth(tagName) {
         return document.getElementsByTagName(tagName)[0].clientWidth
       }
       function createIframe() {
-        return `<iframe width="100%" height="600" class="map_iframe1" src="https://mediafactoryam.github.io/iframes-with-regions/illegal-buildings/index.html" frameborder="0"
+        return `<iframe width="100%" height="600"  src="https://mediafactoryam.github.io/iframes-with-regions/illegal-buildings/index.html" frameborder="0"
     onload="this.style.height = (window.innerWidth < 981) ?  '1400px' :  '600px'" 
     style="overflow:none"></iframe>`
       }
     </script>
-    <iframe width="100%" height="600" class="map_iframe1" src="https://mediafactoryam.github.io/iframes-with-regions/illegal-buildings/index.html" frameborder="0"
+    <iframe width="100%" height="600"  src="https://mediafactoryam.github.io/iframes-with-regions/illegal-buildings/index.html" frameborder="0"
     onload="this.style.height = (window.innerWidth < 981) ?  '1400px' :  '600px'" 
     style="overflow:none"></iframe>
     <!-- <iframe width="100%" height="1400" class="map_iframe2" src="https://mediafactoryam.github.io/iframes-with-regions/illegal-buildings/index.html" frameborder="0"
