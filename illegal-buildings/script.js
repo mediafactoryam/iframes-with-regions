@@ -7,7 +7,7 @@ $(document).ready(function ($) {
     const MOBILE_HEIGHT = 1000
     const DESKTOP_HEIGHT = 600
     const CONTAINER_MOBILE_CLASS = 'mobile_container'
-    const RESPONSIVE_SIZE = 900
+    const RESPONSIVE_SIZE = 981
     updateIframe(
         PARENT_HEIGHT,
         MOBILE_HEIGHT,
