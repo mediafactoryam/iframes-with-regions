@@ -127,7 +127,7 @@ top: 0px;
 
     .container {
         grid-template-columns: 1fr;
-        grid-template-rows: 888px 490px;
+        grid-template-rows: 692px 490px;
         grid-row-gap: 20px;
     
     }
