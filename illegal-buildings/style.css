@@ -108,3 +108,10 @@
         font-size: 30px
     }
 }
+
+@media only screen and (max-width: 400) {
+    .map-cont {
+        width: 100%;
+        height: 30%;
+    }
+}
