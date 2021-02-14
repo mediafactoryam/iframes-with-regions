@@ -11,7 +11,8 @@
 
 .map-cont svg {
     /* height: 98vh; */
-    padding-right: 30px
+    padding-right: 30px;
+    width: 100%;
 }
 
 .text-container {
