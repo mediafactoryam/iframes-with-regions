@@ -87,8 +87,9 @@
     }
 
     .map-cont {
-        width: 50%;
+        width: 100%;
         margin-bottom: 2%;
+        height: 100%;
     }
 
     .map-cont svg {
@@ -99,6 +100,7 @@
 
     .text-container {
         width: 50%;
+        height: 100%;
     }
 
     #texts p {
